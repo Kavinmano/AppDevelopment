@@ -1,0 +1,266 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Top Bar */
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #333333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+    margin-right: 20px;
+    color: #ffae42;
+    font-weight: bold;
+}
+
+/* Left Sidebar */
+.left-bar {
+    background-color: #222222;
+    color: #ffffff;
+    position: fixed;
+    width: 25px;
+    height: 100%;
+    top: 60px;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-bar-container {
+    padding: 20px;
+}
+.col-md-12
+{
+    position: relative;
+    width: 70%;
+    max-width: 450px;
+    margin: 0 auto; /* Center horizontally */
+    background-color: #f5f5f5;
+    color: #0c0c0c;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.left-bar-button,
+.left-bar-button-logout {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    .left-bar-button-logout {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 0;
+    width: 100%;
+}
+
+}
+
+.left-bar-button-logout {
+    margin-top: auto;
+}
+
+.left-bar-button:hover,
+.left-bar-button-logout:hover {
+    background-color: #ffae42;
+    border-left: 4px solid #ffae42;
+    color: #222222;
+}
+
+/* Main Content */
+.main-wrapper {
+    position: absolute;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    
+}
+
+.welcome-container {
+    padding: 10px;
+    margin-top: 100px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Authentication */
+.auth-container {
+    display: flex;  
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#ff42ec, #333333);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("C:\Users\kavin\Desktop\LibApp\src\assets\css\pic4.jpg");
+} 
+.Line
+{
+    color: #0c0c0c;
+}
+
+
+.auth-wrapper {
+    text-align: center;
+}
+
+.auth-form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  top: 65px;
+  left: 1150px;
+  margin-top: 50px;
+  margin-left: 30px;
+  border-radius: 30px;
+    
+    
+}
+auth-form1
+{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center horizontally */
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+
+.auth-heading {
+    font-size: 2rem;
+    color: #0c0c0c;
+    margin-bottom: 20px;
+}
+
+.auth-field {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.auth-field:focus {
+    outline: none;
+    border-color: #ffae42;
+}
+
+.auth-btn {
+    width: 45%;
+    padding: 10px;
+    background-color: #ffae42;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-btn:hover {
+    background-color: #ff8000;
+}
+
+.auth-links {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffae42;
+    font-weight: italic;
+    transition: color 0.3s ease;
+}
+
+.auth-links:hover {
+    color: #ff8000;
+}
+
+a {
+    text-decoration: none;
+    color: #ffae42;
+}
+
+/* Custom Element */
+.siG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    height: 4em;
+    width: 20em;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 3px dashed #9891ff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.siG:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #c7c7c7;
+    cursor: pointer;
+}
+
+.siG p {
+    font-size: 20px;
+}
+.about-button
+{
+  background-color: rgba(255, 255, 255, 0.2); /* Set the background color of the top bar */
+  color: #fff; /* Set text color */
+  padding: 3px; /* Add padding for spacing */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Align elements with space in between */
+  align-items: center;
+  margin-right: 10px
+}
+
+#about-button
+{
+    background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Adjust padding for button size */
+  border-radius: 5px;
+}
